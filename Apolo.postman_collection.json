@@ -1,0 +1,1117 @@
+{
+	"info": {
+		"_postman_id": "9603ffa3-d610-4143-a868-467ff075948d",
+		"name": "Apolo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Delete company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|8rkllor0kjPSm0nhK4PXlwCWv6vsmGtGB5zH9SeR2d395a88",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/company/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"company",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show company",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/company/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"company",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get companies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/company?search=",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"company"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|8rkllor0kjPSm0nhK4PXlwCWv6vsmGtGB5zH9SeR2d395a88",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "ali piri1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ali-piri@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "1566512211",
+									"type": "text"
+								},
+								{
+									"key": "admin",
+									"value": "ali",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "old_password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/company/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"company",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "13|juvaDQLUYfFLcqaE5PZdR4Y7scAgclb5exrIuhLs78c88762",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/logout/company",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"logout",
+								"company"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login contact",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "alipiri",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/v1/contact/login",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"contact",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login company",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ali-piri@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/v1/company/login",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"company",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register company",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ali piri",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ali-piri@outlook.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "1566512211",
+									"type": "text"
+								},
+								{
+									"key": "admin",
+									"value": "ali",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/company/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"company",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register contact",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "ali",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "piri",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "alipiri",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ali-piri@outlokk.com",
+									"type": "text"
+								},
+								{
+									"key": "mobile_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "company_id",
+									"value": "",
+									"description": "optional",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/contact/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"contact",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "Note",
+					"item": [
+						{
+							"name": "Store note",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "4|maj3ww1vLTrdgEQZMrTRTuVI1luWzLcGcZtDtoQWd2210d7d",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "test title",
+											"type": "text"
+										},
+										{
+											"key": "text",
+											"value": "test body",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/note",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"note"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update note",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "4|maj3ww1vLTrdgEQZMrTRTuVI1luWzLcGcZtDtoQWd2210d7d",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "test update",
+											"type": "text"
+										},
+										{
+											"key": "text",
+											"value": "test update",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/note/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"note",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete note",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "4|maj3ww1vLTrdgEQZMrTRTuVI1luWzLcGcZtDtoQWd2210d7d",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/note/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"note",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get contacts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/contact?company_id=&search=",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"contact"
+							],
+							"query": [
+								{
+									"key": "company_id",
+									"value": ""
+								},
+								{
+									"key": "search",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show contact",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/contact/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"contact",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change status",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "contact_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/contact/change-status",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"contact",
+								"change-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update contact",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "RqojvD0IolCYDV95WkgwUiFvtCBjEyA0Y4FOYNDK7b54459f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "ali",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "piri",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "aliaghapiri",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ali-pi11111111ri@outlokk.com",
+									"type": "text"
+								},
+								{
+									"key": "mobile_number",
+									"value": "0936118225801211111",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "company_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "old_password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/contact/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"contact",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get notes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|maj3ww1vLTrdgEQZMrTRTuVI1luWzLcGcZtDtoQWd2210d7d",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/note",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"note"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Attach to company",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/contact/1/attach-company",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"contact",
+								"1",
+								"attach-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete contact",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|maj3ww1vLTrdgEQZMrTRTuVI1luWzLcGcZtDtoQWd2210d7d",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/contact/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"contact",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout contact",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|VuQybpp5YuzNe46NxJDkzRYnwhRWeXqdZiKpyaFm480c9e3c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/logout/contact",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"logout",
+								"contact"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
